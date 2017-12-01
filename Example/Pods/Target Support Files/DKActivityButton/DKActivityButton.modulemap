@@ -1,6 +1,0 @@
-framework module DKActivityButton {
-  umbrella header "DKActivityButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

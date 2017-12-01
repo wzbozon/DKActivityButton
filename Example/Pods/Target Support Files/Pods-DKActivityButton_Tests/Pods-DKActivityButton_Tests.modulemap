@@ -1,6 +1,0 @@
-framework module Pods_DKActivityButton_Tests {
-  umbrella header "Pods-DKActivityButton_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
