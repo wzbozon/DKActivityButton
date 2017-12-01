@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DKActivityButton'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DKActivityButton.'
+  s.version          = '1.0.0'
+  s.summary          = 'iOS UIButton subclass with activity indicator in form of spinning UIImageView.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+To change spinning circle image just change "preloader" image in your assets.
+It has only one property - loading. All other properties can be set as for regular UIButton.
+
+I use this control with ReactiveCocoa.
+Written in Objective C.
                        DESC
 
   s.homepage         = 'https://github.com/wzbozon/DKActivityButton'
