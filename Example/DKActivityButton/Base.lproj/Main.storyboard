@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="DKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DKActivityButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMW-DO-XDi">
+                                <rect key="frame" x="84" y="70" width="151.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Dennis Kutlubaev kutlubaev.denis@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-1e-lMY">
+                                <rect key="frame" x="65.5" y="103" width="189.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3R-ZR-xTq" customClass="DKActivityButton">
+                                <rect key="frame" x="16" y="274.5" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dpH-zh-b8B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="activityButtonClicked:" destination="whP-gf-Uak" eventType="touchUpInside" id="NDh-4x-5l8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xa6-24-qwA">
+                                <rect key="frame" x="16" y="184.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GMW-DO-XDi" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="50" id="5b5-33-ZSL"/>
+                            <constraint firstItem="GMW-DO-XDi" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="GSa-mF-LlU"/>
+                            <constraint firstItem="xa6-24-qwA" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="LmC-cY-5Xz"/>
+                            <constraint firstItem="aTj-1e-lMY" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="MiL-ov-kLK"/>
+                            <constraint firstItem="xa6-24-qwA" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="YZu-Ef-lFc"/>
+                            <constraint firstItem="xa6-24-qwA" firstAttribute="top" secondItem="aTj-1e-lMY" secondAttribute="bottom" constant="50" id="eDI-jh-dBW"/>
+                            <constraint firstItem="r3R-ZR-xTq" firstAttribute="top" secondItem="xa6-24-qwA" secondAttribute="bottom" constant="60" id="gaE-uS-gGd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r3R-ZR-xTq" secondAttribute="trailing" id="io9-yr-PBk"/>
+                            <constraint firstItem="r3R-ZR-xTq" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="mYz-xg-Ist"/>
+                            <constraint firstItem="aTj-1e-lMY" firstAttribute="top" secondItem="GMW-DO-XDi" secondAttribute="bottom" constant="8" id="tMH-hb-xhv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xa6-24-qwA" secondAttribute="trailing" id="tso-ez-7Ac"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityButton" destination="r3R-ZR-xTq" id="ZJj-AO-3Jz"/>
+                        <outlet property="textField" destination="xa6-24-qwA" id="gMC-OF-Cbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.375" y="360.21126760563379"/>
+        </scene>
+    </scenes>
+</document>

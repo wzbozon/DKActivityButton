@@ -1,0 +1,35 @@
+PODS:
+  - DKActivityButton (0.1.0)
+  - Expecta (1.0.6)
+  - Expecta+Snapshots (3.1.1):
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - DKActivityButton (from `../`)
+  - Expecta
+  - Expecta+Snapshots
+  - FBSnapshotTestCase
+  - Specta
+
+EXTERNAL SOURCES:
+  DKActivityButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DKActivityButton: ec114c40d0846d02b997bdc4b8bfdca1c53ab2e3
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: c435d4641517f9319a6ee4b6df82af04cbd0d2da
+
+COCOAPODS: 1.3.1
